@@ -1,6 +1,5 @@
 import React from 'react';
 import { assets } from '../assets/frontend_assets/assets';
-import '../styles/VideoFix.css'; // Add this line to import custom styles
 
 const Hero = () => {
   return (
