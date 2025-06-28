@@ -1,5 +1,6 @@
 import React from 'react';
 import { assets } from '../assets/frontend_assets/assets';
+import '../styles/VideoFix.css'; // Add this line to import custom styles
 
 const Hero = () => {
   return (
@@ -24,7 +25,7 @@ const Hero = () => {
       {/* Right side (Video) */}
       <div className='w-full sm:w-3/3 relative'>
         <video
-          className='w-full h-full object-cover'
+          className='w-full h-full object-cover pointer-events-none'
           src={assets.video1}
           autoPlay
           muted
