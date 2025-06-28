@@ -21,15 +21,15 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Right side (Only video) */}
+      {/* Right side (Video) */}
       <div className='w-full sm:w-3/3 relative'>
         <video
           className='w-full h-full object-cover'
           src={assets.video1}
           autoPlay
           muted
+          loop
           playsInline
-          // no loop — it will stop after 1 play
         />
       </div>
     </div>
