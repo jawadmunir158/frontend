@@ -4,29 +4,39 @@
 @tailwind components;
 @tailwind utilities;
 
-a.active hr{
-    display: block;
-    
-}
-*{
-    font-family: Outfit;
+/* General font setup */
+* {
+  font-family: Outfit;
 }
 
+/* Prata font class */
 .prata-regular {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  ::-webkit-scrollbar{
-    display: none;
+/* Scrollbar hidden */
+::-webkit-scrollbar {
+  display: none;
+}
 
-  }
-  
-@media (max-width:640px)
-{
-a.active{
+/* Navigation link active styles */
+a.active hr {
+  display: block;
+}
+
+/* Mobile nav active styling */
+@media (max-width: 640px) {
+  a.active {
     background-color: black;
     color: white;
+  }
 }
+
+/* ✅ Hide mobile video play button overlay */
+video::-webkit-media-controls,
+video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
 }
